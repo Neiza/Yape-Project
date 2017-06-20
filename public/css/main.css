@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.btn-yellow{
+  background-color:#fbd43b;
+  width: 80%;
+  color: white;
+  border-radius: 5px;
+}
+
+.container-S{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  ul {
+     width:100%;
+     position: absolute;
+     top: 15%;
+     left:12%;
+     white-space: nowrap;
+     overflow: hidden;
+  }
+
+  li{
+    display: inline-block;
+  }
+
+  img{
+    display: inline-block;
+    width: 50%;
+
+  }
+
+  figcaption{
+    display: inline-block;
+  }
+
+  .cap-img1 {
+    position: absolute;
+    top: 85%;
+    left: 10%;
+  }
+
+  .btn-registrarme{
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    height: 40px;
+  }
+
+  .btn-text{
+    position: absolute;
+    width: 80%;
+    height: 40px;
+    top:25%;
+    left: 30%;
+  }
+
+  .form{
+    position: absolute;
+    top: 40%;
+    height: 150px;
+  }
+
+  .divInput{
+    position: absolute;
+    border: 1px solid black;
+    height: 50px;
+  }
+
+.input-img{
+  position: absolute;
+  top: 5px;
+  left: 10%;
+  width: 60px;
+  height: 30px;
+}
+
+.input{
+  position: absolute;
+  right: 10%;
+  bottom: 3px;
+  border: none;
+}
+
+.checkbox{
+  position: absolute;
+  bottom: 5px;
+}
