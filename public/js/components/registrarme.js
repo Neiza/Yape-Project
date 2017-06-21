@@ -25,7 +25,7 @@ const RegistroP1 = () => {
     // const figcap1 = $('<figcaption class="caption cap-img1"><h3>Paga a tus amigos</h3>Paga a quien quieras desde donde <br> quieras, sin usar efectivo.</figcaption>');
     // const figcap2 = $('<figcaption class="caption cap-img2"><h3>Sin nùmero de cuenta</h3>Elige a quien pagar desde tu lista de contactos.</figcaption>');
     // const figcap3 = $('<figcaption class="caption cap-img3"><h3>Gratis y seguro</h3>La transferencia es inmediata y gratuitade una cuenta a otra.</figcaption>');
-    const img1 = $('<div class="img-cont"><img class="img-registrarmeP1" src="img/ccuni.jpg"></img></div>');
+    const img1 = $('<div class="img-cont"><img class="img-registrarmeP1" src="img/icons/happy-person.png"></img></div>');
     const img2 = $('<div class="img-cont"><img class="img-registrarmeP1" src="img/icons/happy-person.png"></img></div>');
     const img3 = $('<div class="img-cont"><img class="img-registrarmeP1" src="img/icons/group-people.png"></img></div>');
     // const dotContainer = $('<div class="dot-container"></div>');

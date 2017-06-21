@@ -132,3 +132,13 @@ Morado dark : #38052a*/
 a{
   color: #00c3a3;
 }
+
+.btn-enable{
+  position: absolute;
+  left: 35%;
+  font-size: 0.9em;
+  background-color:#fbd43b;
+  width: 30%;
+  color: white;
+  border-radius: 5px;
+}

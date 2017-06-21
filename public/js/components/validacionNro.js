@@ -7,7 +7,7 @@ const NumberValidationP2 = () => {
   const divInput = $('<div class="divInput"></div>');
   const imgInput = $('<img class="input-img" src="/img/icons/phoneandnumber.png"></img>');
   const inputP2 = $('<input class="input" type="text"></input>');
-  const checkbox = $('<input id="input1" class="checkbox" type="checkbox" name=""></input>');
+  const checkbox = $('<input class="checkbox" type="checkbox" name=""></input>');
   const checkboxText = $('<span class="checkbox-text">Acepto los <a>Términos y condiciones</a></span>')
   const btnContinuar = $('<button class="btn-continuar disabled" disabled><span class="btn-text text-disabled">CONTINUAR</span></button>');
 //btn-yellow
@@ -21,20 +21,43 @@ const NumberValidationP2 = () => {
   divInput.append(imgInput);
   divInput.append(inputP2);
 
+const numberValidation = () =>{
+  const expressionPhoneNum = /9[0-9]{8}/;
+  inputP2.blur(()=>{
+    if(expressionPhoneNum.test(inputP2.val())){
+        alert("si");
+        btnContinuar.removeClass("disabled");
+        btnContinuar.addClass("btn-enable");
+        btnContinuar.removeAttr("disabled");
+    }
+    else{
+      alert("escribir un número de celular válido");
+    }
+  });
+}
+console.log(checkbox);
+// falta hacer el check del checkbox;
 
-  const expressionPhoneNum = /[0-9]{9}/;
-  const checkedCheckbox = $('.checkbox').prop("checked");
+const numberCode = () =>{
+  $.post("http://localhost:3000/api/registerNumber",
+        {
+          phone: inputP2.val(),
+          terms: true
+        },
+        function(data,status,message){
+          console.log(data.data.code);
+            alert("Tu código es: "data.data.code);
+        });
+}
 
-    $('.input').keyup(function (){
-      this.value = (this.value + '').replace(/[^0-9]/g, '');
-    });
 
   btnContinuar.on('click', () =>{
     const root = $('.root');
     root.empty();
     root.append(Screen3Code());
+    numberCode();
  });
-
+ numberValidation();
   return containerNumValidation;
 
 }
