@@ -23,7 +23,7 @@ const NumberValidationP2 = () => {
 
 const numberValidation = () =>{
   const expressionPhoneNum = /9[0-9]{8}/;
-  inputP2.blur(()=>{
+  inputP2.blur(() => {
     if(expressionPhoneNum.test(inputP2.val())){
         alert("si");
         btnContinuar.removeClass("disabled");
@@ -40,15 +40,27 @@ console.log(checkbox);
 
 const numberCode = () =>{
   $.post("http://localhost:3000/api/registerNumber",
-        {
-          phone: inputP2.val(),
-          terms: true
-        },
-        function(data,status,message){
-          console.log(data.data.code);
-            alert("Tu código es: "data.data.code);
-        });
-}
+    {
+      phone: inputP2.val(),
+      terms: true
+    },
+    function(data){
+      console.log(data.data.code);
+      alert("Tu código es: " + data.data.code);
+    });
+};
+
+const resendCode = () => {
+  $.post("http://localhost:3000/api/resendCode",
+    {
+      phone:inputP2.val()
+    },
+    function(data){
+     console.log(data);
+     alert("El tiempo de espera acabó.Tu nuevo código es: " + data.data);
+  });
+};
+
 
 
   btnContinuar.on('click', () =>{
@@ -56,6 +68,8 @@ const numberCode = () =>{
     root.empty();
     root.append(Screen3Code());
     numberCode();
+    // setTimeout(resendCode(), 21000);
+    // setInterval(resendCode(), 21000);
  });
  numberValidation();
   return containerNumValidation;

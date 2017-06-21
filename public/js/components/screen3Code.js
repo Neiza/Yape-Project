@@ -18,6 +18,19 @@ const Screen3Code = (registeredNumber) => {
   divInputS3.append(imgInputS3);
   divInputS3.append(inputS3);
 
+//   const resendCode = () => {
+//     const inputS2 = $('.input').val();
+//     $.post("http://localhost:3000/api/resendCode",
+//     {
+//       phone: inputS2
+//     },
+//     function(){
+//       {
+//
+//       }
+//     });
+// };
+
   const codeValidation = (code) => {
     const inputValue = $('.input').val();
     if (inputValue == code){
@@ -26,8 +39,12 @@ const Screen3Code = (registeredNumber) => {
     }
   }
 
-  inputS3.keyup(() => {
-    codeValidation(data.data.code);
+
+
+  inputS3.on('click', (data) => {
+    // const data =
+    console.log(data.data.code);
+    // codeValidation(data.data.code);
   });
 
   return containerCodeS3;
