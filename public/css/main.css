@@ -1,3 +1,13 @@
+/*Rojo - bullet : #f64552
+Gris - bullet : #f8f8f8
+Amarillo - botones : #fbd43b
+Gris dark : #212121
+Gris - letra soft : #8f8f8f
+Turquesa - Términos y condiciones: #00c3a3
+Morado - Entrada de números : #49233b
+Morado light : #451e36
+Morado dark : #38052a*/
+
 *{
   margin: 0;
   padding: 0;
@@ -10,85 +20,115 @@
   border-radius: 5px;
 }
 
-.container-S{
-    width: 100%;
-    position: relative;
-    margin: 0 auto;
-    overflow: hidden;
-  }
+.cap-img1 {
+  position: absolute;
+  top: 85%;
+  left: 10%;
+}
 
-  ul {
-     width:100%;
-     position: absolute;
-     top: 15%;
-     left:12%;
-     white-space: nowrap;
-     overflow: hidden;
-  }
+.btn-registrarme{
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  height: 40px;
+}
 
-  li{
-    display: inline-block;
-  }
-
-  img{
-    display: inline-block;
-    width: 50%;
-
-  }
-
-  figcaption{
-    display: inline-block;
-  }
-
-  .cap-img1 {
+.btn-text{
     position: absolute;
-    top: 85%;
-    left: 10%;
-  }
-
-  .btn-registrarme{
-    position: absolute;
-    bottom: 20%;
-    left: 10%;
     height: 40px;
+    top:29%;
+    left:30%;
   }
 
-  .btn-text{
-    position: absolute;
-    width: 80%;
-    height: 40px;
-    top:25%;
-    left: 30%;
-  }
+.phone-img{
+  position: absolute;
+  top: 11%;
+  left: 37%;
+  width: 90px;;
+  height: 70px;
+}
 
-  .form{
-    position: absolute;
-    top: 40%;
-    height: 150px;
-  }
+.titleP2, .textP2{
+  position: absolute;
+}
 
-  .divInput{
-    position: absolute;
-    border: 1px solid black;
-    height: 50px;
-  }
+.titleP2{
+  top: 28%;
+  right: 10%;
+  left: 11%;
+  text-align: center;
+}
+
+.textP2{
+  font-size: 0.85em;
+  top: 40%;
+  left: 10%;
+}
+
+.divInput{
+  position: absolute;
+  top: 255px;
+  left: 10%;
+  width: 78%;
+  height: 50px;
+  border-bottom: 1px solid black;
+  height: 60px;
+}
 
 .input-img{
   position: absolute;
-  top: 5px;
-  left: 10%;
-  width: 60px;
-  height: 30px;
+  bottom: 5px;
+  left: 5%;
+  width: 50px;
+  height: 25px;
 }
 
 .input{
   position: absolute;
-  right: 10%;
-  bottom: 3px;
+  right: 5%;
+  bottom: 5px;
   border: none;
+  letter-spacing: 1px;
+}
+
+.input:focus{
+  outline: none;
 }
 
 .checkbox{
   position: absolute;
-  bottom: 5px;
+  top: 325px;
+  left: 10%;
+  width: 5%;
+  height: 5%;
+}
+
+.checkbox-text{
+  position: absolute;
+  top: 325px;
+  left: 20%;
+}
+
+.btn-continuar{
+  position: absolute;
+  bottom: 10%;
+  left: 35%;
+  height: 38px;
+}
+
+.disabled{
+  background-color:#d6d6d6;
+  width: 30%;
+  color: white;
+  border-radius: 5px;
+}
+
+.text-disabled{
+  position: absolute;
+  left: 20%;
+  font-size: 0.8em;
+}
+
+a{
+  color: #00c3a3;
 }
