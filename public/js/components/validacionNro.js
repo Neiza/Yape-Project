@@ -61,8 +61,6 @@ const resendCode = () => {
   });
 };
 
-
-
   btnContinuar.on('click', () =>{
     const root = $('.root');
     root.empty();
