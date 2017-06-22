@@ -35,43 +35,35 @@ const numberValidation = () =>{
     }
   });
 }
-console.log(checkbox);
 // falta hacer el check del checkbox;
 
-const numberCode = () =>{
+
+const numberCode = (data) =>{
   $.post("http://localhost:3000/api/registerNumber",
     {
       phone: inputP2.val(),
       terms: true
     },
     function(data){
-      console.log(data.data.code);
       alert("Tu código es: " + data.data.code);
+      state.cod = data.data.code
+      console.log(data.data.code);
     });
-};
 
-const resendCode = () => {
-  $.post("http://localhost:3000/api/resendCode",
-    {
-      phone:inputP2.val()
-    },
-    function(data){
-     console.log(data);
-     alert("El tiempo de espera acabó.Tu nuevo código es: " + data.data);
-  });
 };
 
 
 
   btnContinuar.on('click', () =>{
+    state.number = inputP2.val();
     const root = $('.root');
     root.empty();
     root.append(Screen3Code());
     numberCode();
-    // setTimeout(resendCode(), 21000);
-    // setInterval(resendCode(), 21000);
  });
+
  numberValidation();
   return containerNumValidation;
+
 
 }

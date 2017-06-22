@@ -7,13 +7,13 @@ const render = (root) => {
   }
   wrapper.append(RegistroP1());
   root.append(wrapper);
-
 }
 
 const state = {
   number: null,
-  code: null
+  cod: null
 }
+
 
 $( _ => {
   const root = $('.root');

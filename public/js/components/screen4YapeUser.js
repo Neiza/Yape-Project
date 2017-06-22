@@ -9,7 +9,7 @@ const Screen4YapeUser = () => {
   const imgInputName = $('<img class="input-img" src="/img/icons/user.png"></img>');
   const inputS3Name = $('<input class="input" type="text"></input>');
   const divInputEmail = $('<div class="divInputEmail"></div>');
-  const imgInputEmail = $('<img class="input-imgEmail" src="/img/icons/message-gray.png"></img>');
+  const imgInputEmail = $('<img class="input-img" src="/img/icons/message-gray.png"></img>');
   const inputS3Email = $('<input class="inputEmail" type="text"></input>');
   const divInputPass = $('<div class="divInputPass"></div>');
   const imgInputPass = $('<img class="input-imgPass" src="/img/icons/lock.png"></img>');
@@ -23,9 +23,17 @@ const Screen4YapeUser = () => {
   constainerS4YapeUser.append(divInputName);
   constainerS4YapeUser.append(divInputEmail);
   constainerS4YapeUser.append(divInputPass);
-  constainerS4YapeUser.append();
-  constainerS4YapeUser.append();
-  constainerS4YapeUser.append();
+  constainerS4YapeUser.append(lowerText);
+  constainerS4YapeUser.append(btnS4CrearCuenta);
+  divInputName.append(imgInputName);
+  divInputName.append(inputS3Name);
+  divInputEmail.append(imgInputEmail);
+  divInputEmail.append(inputS3Email);
+  divInputPass.append(imgInputPass);
+  divInputPass.append(inputS3Pass);
+
+
+
 
 btnS4CrearCuenta.on('click', () =>{
   const root = $('.root');
