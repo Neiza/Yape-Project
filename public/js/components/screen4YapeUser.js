@@ -5,15 +5,15 @@ const Screen4YapeUser = () => {
   const lockImg = $('<img class="phone-img" src="img/icons/lockone.png"></img>');
   const titleS4 = $('<h3 class="titleP2">Crea tu usuario Yape</h3>');
   const textS4 =  $('<span class="textP2">Ingresa tu nombre, email y nombre de usuario</span>');
-  const divInputName = $('<div class="divInput"></div>');
-  const imgInputName = $('<img class="input-img" src="/img/icons/user.png"></img>');
-  const inputS3Name = $('<input class="input" type="text"></input>');
-  const divInputEmail = $('<div class="divInputEmail"></div>');
-  const imgInputEmail = $('<img class="input-img" src="/img/icons/message-gray.png"></img>');
-  const inputS3Email = $('<input class="inputEmail" type="text"></input>');
-  const divInputPass = $('<div class="divInputPass"></div>');
-  const imgInputPass = $('<img class="input-imgPass" src="/img/icons/lock.png"></img>');
-  const inputS3Pass = $('<input class="inputPass" type="password"></input>');
+  const divInputName = $('<div class="divInputName"></div>');
+  const imgInputName = $('<img class=" img-size" src="/img/icons/user.png"></img>');
+  const inputS3Name = $('<input class="input" type="text" placeholder="Nombre"></input>');
+  const divInputEmail = $('<div class="divInputEmail input-container"></div>');
+  const imgInputEmail = $('<img class=" img-size" src="/img/icons/message-gray.png"></img>');
+  const inputS3Email = $('<input class="input" placeholder="correo@ejemplo.com" type="text"></input>');
+  const divInputPass = $('<div class="divInputPass input-container"></div>');
+  const imgInputPass = $('<img class="img-size" src="/img/icons/lock.png"></img>');
+  const inputS3Pass = $('<input class="inputs" placeholder="Ingresa clave de 6 dígitos" type="password"></input>');
   const lowerText = $('<span class="lower-text">Cuida esta cave como oro, es tu acceso a Yape.</span>');
   const btnS4CrearCuenta = $('<button class="btn-continuar disabled" disabled><span class="btn-text text-disabled">CREAR CUENTA</span></button>');
 
@@ -31,8 +31,6 @@ const Screen4YapeUser = () => {
   divInputEmail.append(inputS3Email);
   divInputPass.append(imgInputPass);
   divInputPass.append(inputS3Pass);
-
-
 
 
 btnS4CrearCuenta.on('click', () =>{

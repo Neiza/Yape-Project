@@ -44,8 +44,41 @@ Morado dark : #38052a*/
   position: absolute;
   top: 11%;
   left: 37%;
-  width: 90px;;
+  width: 90px;
   height: 70px;
+}
+
+.img-size{
+  position: absolute;
+  bottom: 5px;
+  width: 25px;
+  height: 30px;
+  border: none;
+}
+
+.inputEmail:focus{
+  outline: none;
+}
+
+.inputP:focus{
+  outline: none;
+}
+
+.input-container{
+  position: absolute;
+  left: 10%;
+  width: 78%;
+  height: 50px;
+  border-bottom: 1px solid black;
+  height: 60px;
+}
+
+.divInputEmail{
+  top:310px;
+}
+
+.divInputPass{
+  top:370px;
 }
 
 .titleP2, .textP2{
@@ -141,4 +174,9 @@ a{
   width: 30%;
   color: white;
   border-radius: 5px;
+}
+
+.lower-text{
+  position: absolute;
+  bottom: 20%;
 }
