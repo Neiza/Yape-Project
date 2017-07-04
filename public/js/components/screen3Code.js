@@ -1,5 +1,15 @@
 "use strict";
 
+const Screen3Code = (time) => {
+  const containerCodeS3 = $('<div class="container-s3"></div>');
+  const messageImg = $('<img class="phone-img" src="img/icons/message.png"></img>');
+  const titleS3 = $('<h3 class="titleP2">Ahora ingresa tu código</h3>');
+  const textS3 = $('<span class="textP2">Enviamos un SMS con un código de validación al número '+ state.number +' </span>');
+  const divInputS3 = $('<div class="divInput"></div>');
+  const imgInputS3 = $('<img class="input-img" src="img/icons/lock.png"></img>');
+  const inputS3 = $('<input class="input" type="text"></input>');
+  const inputTextS3 = $('<span class="checkbox-text">Reintentar en <img src="img/icons/clock.png" class></img> ' + time + ' seg.</span>');
+
   containerCodeS3.append(messageImg);
   containerCodeS3.append(titleS3);
   containerCodeS3.append(textS3);
