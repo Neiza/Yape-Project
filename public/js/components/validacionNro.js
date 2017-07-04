@@ -39,14 +39,15 @@ const numberValidation = () =>{
 
 
 const numberCode = (data) =>{
-  $.post("http://localhost:3000/api/registerNumber",
+  $.post("/api/registerNumber",
     {
       phone: inputP2.val(),
       terms: true
     },
+
     function(data){
       alert("Tu código es: " + data.data.code);
-      state.cod = data.data.code
+      state.cod = data.data.code;
       console.log(data.data.code);
     });
 

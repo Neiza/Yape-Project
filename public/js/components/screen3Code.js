@@ -25,7 +25,7 @@ const Screen3Code = (time) => {
       },
       function(){
        console.log(data.data);
-       alert("El tiempo de espera acabó.Tu nuevo código es: " + data );
+       alert("El tiempo de espera acabó.Tu nuevo código es: " + data.data );
 
     });
   };
